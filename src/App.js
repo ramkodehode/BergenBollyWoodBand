@@ -1,57 +1,58 @@
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
-import { useEffect, useState } from 'react';
 
-function App() {
+const App = () => {
   const [data, setData] = useState([]);
   const URL =
     "https://3gyp0oi0.api.sanity.io/v2021-10-21/data/query/production?query=*%20%5B_type%3D%3D'post'%5D";
-  const getMainSponsors = () => {
-    axios.get(URL).then((res) => {
-      return setData(res.data.result);
-    });
+
+  const getSongs = async () => {
+    await axios
+      .get(URL)
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
+  console.log(data);
+
   useEffect(() => {
-    getMainSponsors();
+    getSongs();
   }, []);
 
   return (
-    <>
+    <div className="App">
       <h1>BergenBollywoodBand</h1>
+      <h2>Song list</h2>
+      <ol>
+        {data.result?.map((item, index) => {
+          return (
+            <div key={index} className="App-header">
+              <b>
+                <li> {item.name}</li>
+              </b>
+              <h4>Orignal: </h4>
 
-      {data.map((item) => {
-        return (
-          <div className="App">
-            <header className="App-header">
-              <h2> Song list </h2>
+              <a target={'blank'} href={item.link}>
+                {item.link}
+              </a>
+              <h4>Alternative 1: </h4>
 
-              <ol>
-                <b>
-                  <li> {item.Name}</li>
-                </b>
-                <h4>Orignal: </h4>
+              <h4>Alternative 2: </h4>
 
-                <a target={'blank'} href={item.link}>
-                  {item.link}
-                </a>
-                <h4>Alternative 1: </h4>
-
-                <a target={'blank'} href={'https://youtu.be/0vgh5lBo2Ek'}>
-                  https://youtu.be/0vgh5lBo2Ek
-                </a>
-                <h4>Alternative 2: </h4>
-
-                <a target={'blank'} href={' https://youtu.be/YxgbjHYRxbQ'}>
-                   https://youtu.be/YxgbjHYRxbQ
-                </a>
-              </ol>
-            </header>
-          </div>
-        );
-      })}
-    </>
+              <a target={'blank'} href={' https://youtu.be/YxgbjHYRxbQ'}>
+                 https://youtu.be/YxgbjHYRxbQ
+              </a>
+            </div>
+          );
+        })}
+      </ol>
+    </div>
   );
-}
+};
 
 export default App;
