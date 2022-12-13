@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
 .App {
-  text-align: center;
   background-color: #f5a126;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  justify-self: flex-start;
+}
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #faf9f6;
+  font-size: 4rem;
 }
 
 .App-header {
@@ -9,7 +24,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(14px + 2vmin);
   color: black;
   background-color: #f5a126;
 }
