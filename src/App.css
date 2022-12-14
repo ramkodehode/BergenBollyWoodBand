@@ -7,19 +7,22 @@
 ol {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
-li {
-  justify-self: flex-start;
-}
 h1 {
   font-family: 'Berkshire Swash', cursive;
   color: #faf9f6;
   font-size: 4rem;
+  border: 4px solid white;
+  display: flex;
+  justify-content: center;
 }
 
 .App-header {
-  min-height: 100vh;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
