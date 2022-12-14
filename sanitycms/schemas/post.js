@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import {defineType} from 'sanity'
 
 export default defineType({
   name: 'post',
@@ -11,18 +11,18 @@ export default defineType({
       type: 'string',
     },
     {
-      name: 'link',
-      title: 'Link',
+      name: 'original',
+      title: 'Original',
       type: 'string',
     },
     {
-      name: 'alternative1',
-      title: 'Alternative1',
+      name: 'alternativeone',
+      title: 'AlternativeOne',
       type: 'string',
     },
     {
-      name: 'alternative',
-      title: 'Alternative2',
+      name: 'alternativetwo',
+      title: 'AlternativeTwo',
       type: 'string',
     },
   ],
