@@ -27,7 +27,6 @@ const App = () => {
   return (
     <div className="App">
       <h1>BergenBollywoodBand</h1>
-      <h2>Song list</h2>
       <ol>
         {data.result?.map((item, index) => {
           return (
@@ -36,16 +35,19 @@ const App = () => {
                 <li> {item.name}</li>
               </b>
               <h4>Orignal: </h4>
-
-              <a target={'blank'} href={item.link}>
-                {item.link}
+              <a target={'blank'} href={item.original}>
+                {item.original}
               </a>
+
               <h4>Alternative 1: </h4>
+              <a target={'blank'} href={item.alternativeone}>
+                {item.alternativeone}
+              </a>
 
               <h4>Alternative 2: </h4>
 
-              <a target={'blank'} href={' https://youtu.be/YxgbjHYRxbQ'}>
-                 https://youtu.be/YxgbjHYRxbQ
+              <a target={'blank'} href={item.alternativetwo}>
+                {item.alternativetwo}
               </a>
             </div>
           );
