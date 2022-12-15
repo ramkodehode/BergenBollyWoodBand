@@ -7,6 +7,12 @@ const App = () => {
   const URL =
     "https://3gyp0oi0.api.sanity.io/v2021-10-21/data/query/production?query=*%20%5B_type%3D%3D'post'%5D";
 
+  // let youtubeThumbnail = require('youtube-thumbnail');
+
+  // let thumbnail = youtubeThumbnail('https://youtu.be/ulUZcdwTVaA');
+
+  // console.log('This is the thumbnailphoto:', thumbnail);
+
   const getSongs = async () => {
     await axios
       .get(URL)
