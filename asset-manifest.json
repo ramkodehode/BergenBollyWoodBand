@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BergenBollywoodBand/static/css/main.fb92f296.css",
+    "main.js": "/BergenBollywoodBand/static/js/main.0af47ff7.js",
+    "index.html": "/BergenBollywoodBand/index.html",
+    "main.fb92f296.css.map": "/BergenBollywoodBand/static/css/main.fb92f296.css.map",
+    "main.0af47ff7.js.map": "/BergenBollywoodBand/static/js/main.0af47ff7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb92f296.css",
+    "static/js/main.0af47ff7.js"
+  ]
+}
