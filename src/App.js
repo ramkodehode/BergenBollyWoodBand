@@ -32,14 +32,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>BergenBollywoodBand</h1>
       <ol>
+        <h1>BergenBollywoodBand</h1>
+
         {data.result?.map((item, index) => {
           return (
             <div key={index} className="App-header">
-              <b>
-                <li> {item.name}</li>
-              </b>
+              <li>
+                <strong> {item.name}</strong>
+              </li>
               <h4>Orignal: </h4>
               <a target={'blank'} href={item.original}>
                 {item.original}
