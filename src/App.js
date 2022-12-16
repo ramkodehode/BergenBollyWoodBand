@@ -31,36 +31,38 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
-      <ol>
-        <h1>BergenBollywoodBand</h1>
+    <>
+      <h1>BergenBollywoodBand</h1>
 
-        {data.result?.map((item, index) => {
-          return (
-            <div key={index} className="App-header">
-              <li>
-                <strong> {item.name}</strong>
-              </li>
-              <h4>Orignal: </h4>
-              <a target={'blank'} href={item.original}>
-                {item.original}
-              </a>
+      <div className="App">
+        <ol>
+          {data.result?.map((item, index) => {
+            return (
+              <div key={index} className="App-header">
+                <li>
+                  <strong> {item.name}</strong>
+                </li>
+                <h4>Orignal: </h4>
+                <a target={'blank'} href={item.original}>
+                  {item.original}
+                </a>
 
-              <h4>Alternative 1: </h4>
-              <a target={'blank'} href={item.alternativeone}>
-                {item.alternativeone}
-              </a>
+                <h4>Alternative 1: </h4>
+                <a target={'blank'} href={item.alternativeone}>
+                  {item.alternativeone}
+                </a>
 
-              <h4>Alternative 2: </h4>
+                <h4>Alternative 2: </h4>
 
-              <a target={'blank'} href={item.alternativetwo}>
-                {item.alternativetwo}
-              </a>
-            </div>
-          );
-        })}
-      </ol>
-    </div>
+                <a target={'blank'} href={item.alternativetwo}>
+                  {item.alternativetwo}
+                </a>
+              </div>
+            );
+          })}
+        </ol>
+      </div>
+    </>
   );
 };
 
