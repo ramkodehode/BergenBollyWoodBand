@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/BergenBollywoodBand/static/css/main.fb92f296.css",
-    "main.js": "/BergenBollywoodBand/static/js/main.0af47ff7.js",
+    "main.css": "/BergenBollywoodBand/static/css/main.c0f3856d.css",
+    "main.js": "/BergenBollywoodBand/static/js/main.ce980a7d.js",
     "index.html": "/BergenBollywoodBand/index.html",
-    "main.fb92f296.css.map": "/BergenBollywoodBand/static/css/main.fb92f296.css.map",
-    "main.0af47ff7.js.map": "/BergenBollywoodBand/static/js/main.0af47ff7.js.map"
+    "main.c0f3856d.css.map": "/BergenBollywoodBand/static/css/main.c0f3856d.css.map",
+    "main.ce980a7d.js.map": "/BergenBollywoodBand/static/js/main.ce980a7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb92f296.css",
-    "static/js/main.0af47ff7.js"
+    "static/css/main.c0f3856d.css",
+    "static/js/main.ce980a7d.js"
   ]
 }
