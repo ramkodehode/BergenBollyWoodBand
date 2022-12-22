@@ -32,7 +32,9 @@ const App = () => {
 
   return (
     <>
-      <h1>BergenBollywoodBand</h1>
+      <div className="heading">
+        <h1>BergenBollywoodBand</h1>
+      </div>
 
       <div className="App">
         <ol>
